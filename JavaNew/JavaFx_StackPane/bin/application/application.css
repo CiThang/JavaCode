@@ -1,0 +1,13 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root{
+	-fx-font-size: 36;
+}
+
+.label{
+	-fx-background-color: pink;
+	-fx-text-fill: back;
+}
+
+.button{
+	-fx-font-size: 24;
+}

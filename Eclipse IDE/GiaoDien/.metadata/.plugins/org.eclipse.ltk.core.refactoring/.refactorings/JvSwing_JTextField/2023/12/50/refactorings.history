@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_JTextField/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_JTextField&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_JTextField/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_JTextField/src/Model&#x0D;&#x0A;     JvSwing_JTextField/src/Controller&#x0D;&#x0A;     JvSwing_JTextField/src/View&#x0D;&#x0A;     JvSwing_JTextField/src/Test" description="Copy packages" destination="=JavaSwing_JTextField/src" element1="/src&lt;Model" element2="/src&lt;Controller" element3="/src&lt;View" element4="/src&lt;Test" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702560323467" version="1.0"/>
+</session>

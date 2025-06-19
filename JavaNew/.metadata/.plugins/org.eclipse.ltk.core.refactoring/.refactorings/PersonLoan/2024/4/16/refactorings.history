@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;input.txt&apos; to &apos;LTM_MultiThreading_/src/DaemonThread&apos;&#x0D;&#x0A;- Original project: &apos;PersonLoan&apos;&#x0D;&#x0A;- Destination element: &apos;LTM_MultiThreading_/src/DaemonThread&apos;&#x0D;&#x0A;- Original element: &apos;input.txt&apos;" description="Copy file" destination="=LTM_MultiThreading_/src&lt;DaemonThread" element1="PersonLoan/input.txt" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1713138953029" units="0" version="1.0"/>
+</session>

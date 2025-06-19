@@ -1,0 +1,178 @@
+package Yelp_View;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.awt.Font;
+import javax.swing.SwingConstants;
+import java.awt.Component;
+import javax.swing.Box;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+
+public class YelpRegisterView extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	private JTextField textFieldHo;
+	private JTextField textFieldTen;
+	private JTextField textFieldTenTaiKhoan;
+	private JPasswordField passwordField;
+	private JTextField textFieldNgaySinh;
+	private JTextField textFieldEmail;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					YelpRegisterView frame = new YelpRegisterView();
+					frame.setVisible(true);
+					frame.setLocationRelativeTo(null);
+					frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public YelpRegisterView() {
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 643, 495);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(226, 226, 226));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(255, 255, 255));
+		panel.setBounds(10, 11, 607, 359);
+		contentPane.add(panel);
+		panel.setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("New label");
+		lblNewLabel.setIcon(new ImageIcon("D:\\Pictures\\3f368a7615ee399a42f31256b0127b78.jpg"));
+		lblNewLabel.setBounds(47, 113, 103, 152);
+		panel.add(lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("D:\\DuanYelp\\Java_app\\a.png"));
+		lblNewLabel_1.setBounds(10, 11, 68, 73);
+		panel.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("ĐĂNG KÍ");
+		lblNewLabel_2.setForeground(new Color(128, 0, 0));
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_2.setFont(new Font("Arial", Font.BOLD, 35));
+		lblNewLabel_2.setBounds(170, -9, 347, 97);
+		panel.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("Cùng nhau xây dựng lên một cộng đồng mạnh mẽ để quảng bá ẩm thực Việt Nam nào");
+		lblNewLabel_3.setFont(new Font("Arial", Font.ITALIC, 13));
+		lblNewLabel_3.setBounds(81, 68, 516, 14);
+		panel.add(lblNewLabel_3);
+		
+		JLabel lblNewLabel_4 = new JLabel("Họ");
+		lblNewLabel_4.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_4.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4.setBounds(234, 110, 39, 25);
+		panel.add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_4_1 = new JLabel("Tên");
+		lblNewLabel_4_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_4_1.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4_1.setBounds(396, 110, 39, 25);
+		panel.add(lblNewLabel_4_1);
+		
+		textFieldHo = new JTextField();
+		textFieldHo.setBounds(293, 110, 86, 25);
+		panel.add(textFieldHo);
+		textFieldHo.setColumns(10);
+		
+		textFieldTen = new JTextField();
+		textFieldTen.setColumns(10);
+		textFieldTen.setBounds(445, 110, 98, 25);
+		panel.add(textFieldTen);
+		
+		JLabel lblNewLabel_4_2 = new JLabel("Tên tài khoản");
+		lblNewLabel_4_2.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4_2.setBounds(177, 154, 96, 25);
+		panel.add(lblNewLabel_4_2);
+		
+		textFieldTenTaiKhoan = new JTextField();
+		textFieldTenTaiKhoan.setFont(new Font("Arial", Font.PLAIN, 11));
+		textFieldTenTaiKhoan.setBounds(293, 152, 250, 27);
+		panel.add(textFieldTenTaiKhoan);
+		textFieldTenTaiKhoan.setColumns(10);
+		
+		JLabel lblNewLabel_4_2_1 = new JLabel("Mật khẩu");
+		lblNewLabel_4_2_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_4_2_1.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4_2_1.setBounds(177, 200, 96, 25);
+		panel.add(lblNewLabel_4_2_1);
+		
+		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Arial", Font.PLAIN, 11));
+		passwordField.setBounds(293, 200, 250, 27);
+		panel.add(passwordField);
+		
+		JLabel lblNewLabel_4_2_1_1 = new JLabel("Ngày sinh");
+		lblNewLabel_4_2_1_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_4_2_1_1.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4_2_1_1.setBounds(177, 248, 96, 25);
+		panel.add(lblNewLabel_4_2_1_1);
+		
+		JLabel lblNewLabel_4_2_1_2 = new JLabel("Email");
+		lblNewLabel_4_2_1_2.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_4_2_1_2.setFont(new Font("Arial", Font.BOLD, 15));
+		lblNewLabel_4_2_1_2.setBounds(177, 294, 96, 25);
+		panel.add(lblNewLabel_4_2_1_2);
+		
+		textFieldNgaySinh = new JTextField();
+		textFieldNgaySinh.setFont(new Font("Arial", Font.PLAIN, 11));
+		textFieldNgaySinh.setColumns(10);
+		textFieldNgaySinh.setBounds(293, 251, 250, 27);
+		panel.add(textFieldNgaySinh);
+		
+		textFieldEmail = new JTextField();
+		textFieldEmail.setFont(new Font("Arial", Font.PLAIN, 11));
+		textFieldEmail.setColumns(10);
+		textFieldEmail.setBounds(293, 297, 250, 27);
+		panel.add(textFieldEmail);
+		
+		JButton btnNewButton_1 = new JButton("Chọn ảnh");
+		btnNewButton_1.setForeground(new Color(255, 255, 255));
+		btnNewButton_1.setBackground(new Color(0, 128, 255));
+		btnNewButton_1.setFont(new Font("Arial", Font.BOLD, 11));
+		btnNewButton_1.setBounds(47, 265, 103, 23);
+		panel.add(btnNewButton_1);
+		
+		JButton btnNewButton = new JButton("Tạo tài khoản");
+		btnNewButton.setBackground(new Color(0, 128, 255));
+		btnNewButton.setForeground(new Color(255, 255, 255));
+		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnNewButton.setBounds(59, 390, 209, 32);
+		contentPane.add(btnNewButton);
+		
+		JButton btnHy = new JButton("Hủy");
+		btnHy.setBackground(new Color(0, 128, 255));
+		btnHy.setForeground(new Color(255, 255, 255));
+		btnHy.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnHy.setBounds(353, 390, 209, 32);
+		contentPane.add(btnHy);
+	}
+}

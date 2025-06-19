@@ -1,0 +1,23 @@
+package Yelp_Controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import Yelp_View.YelpSignInView;
+
+public class YelpSignInController implements ActionListener {
+
+	YelpSignInView sign = new YelpSignInView();
+	
+	public YelpSignInController(YelpSignInView sign) {
+		this.sign = sign;
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		String luachon = e.getActionCommand();
+		
+	}
+
+}

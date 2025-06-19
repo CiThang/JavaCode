@@ -1,0 +1,15 @@
+package Yelp_DAO;
+
+import Yelp_View.YelpMainView;
+
+public class YelpRegisterDAO {
+	
+	public static YelpRegisterDAO getInstance() {
+		return new YelpRegisterDAO();
+	}
+	
+	public YelpMainView mainview = new YelpMainView();
+	private java.util.Date javaDate;
+	
+
+}

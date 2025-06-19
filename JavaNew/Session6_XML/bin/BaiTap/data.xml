@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class>
+	thẻ student là thẻ  root node
+    <student rollno="101">
+        <name>John</name>
+        <age>18</age>
+        <gender>Male</gender>
+        <grade>A</grade>
+    </student>
+    <student rollno="102">
+        <name>Alice</name>
+        <age>19</age>
+        <gender>Female</gender>
+        <grade>B</grade>
+    </student>
+</class>

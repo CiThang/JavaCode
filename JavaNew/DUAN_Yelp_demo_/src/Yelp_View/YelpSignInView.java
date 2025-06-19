@@ -1,0 +1,130 @@
+package Yelp_View;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import Yelp_Controller.YelpSignInController;
+
+import javax.swing.JLabel;
+import java.awt.Font;
+import java.awt.event.ActionListener;
+
+import javax.swing.SwingConstants;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import javax.swing.JPasswordField;
+import javax.swing.JButton;
+
+public class YelpSignInView extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+	public JTextField textFieldtaikhoan;
+	public JPasswordField passwordField;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					YelpSignInView frame = new YelpSignInView();
+					frame.setVisible(true);
+					frame.setLocationRelativeTo(null);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public YelpSignInView() {
+		setBounds(100, 100, 454, 560);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(226, 226, 226));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+					
+		contentPane.setLayout(null);
+		JPanel panelSign = new JPanel();	
+		
+		panelSign.setBackground(new Color(255, 255, 255));
+		panelSign.setBounds(10, 11, 418, 410);
+		contentPane.add(panelSign);
+		panelSign.setLayout(null);
+		
+		ActionListener ac = new YelpSignInController(this);
+		
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("D:\\DuanYelp\\Java_app\\a.png"));
+		lblNewLabel_1.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_1.setBackground(new Color(255, 255, 255));
+		lblNewLabel_1.setBounds(10, 11, 73, 74);
+		panelSign.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel = new JLabel("Đăng nhập");
+		lblNewLabel.setForeground(new Color(128, 0, 0));
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setFont(new Font("Arial", Font.BOLD, 35));
+		lblNewLabel.setBounds(44, 31, 347, 97);
+		panelSign.add(lblNewLabel);
+		
+		JLabel lblNewLabel_2 = new JLabel("Tài Khoản");
+		lblNewLabel_2.setForeground(new Color(128, 128, 128));
+		lblNewLabel_2.setFont(new Font("Arial", Font.BOLD, 18));
+		lblNewLabel_2.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_2.setBounds(20, 202, 123, 53);
+		panelSign.add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_2_1 = new JLabel("Mật Khẩu");
+		lblNewLabel_2_1.setForeground(new Color(128, 128, 128));
+		lblNewLabel_2_1.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblNewLabel_2_1.setFont(new Font("Arial", Font.BOLD, 18));
+		lblNewLabel_2_1.setBounds(20, 274, 123, 53);
+		panelSign.add(lblNewLabel_2_1);
+		
+		textFieldtaikhoan = new JTextField();
+		textFieldtaikhoan.setFont(new Font("Arial", Font.PLAIN, 12));
+		textFieldtaikhoan.setBounds(163, 211, 187, 34);
+		panelSign.add(textFieldtaikhoan);
+		textFieldtaikhoan.setColumns(10);
+		
+		passwordField = new JPasswordField();
+		passwordField.setFont(new Font("Arial", Font.PLAIN, 12));
+		passwordField.setBounds(163, 286, 187, 34);
+		panelSign.add(passwordField);
+		
+		JLabel lblNewLabel_3 = new JLabel("Chào mừng bạn tới app đánh giá ẩm thực hàng đầu Việt Nam");
+		lblNewLabel_3.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel_3.setFont(new Font("Arial", Font.ITALIC, 12));
+		lblNewLabel_3.setBounds(44, 121, 347, 23);
+		panelSign.add(lblNewLabel_3);
+		
+		JButton btnDangNhap = new JButton("ĐĂNG NHẬP");
+		btnDangNhap.setForeground(new Color(255, 255, 255));
+		btnDangNhap.setFont(new Font("Arial", Font.BOLD, 13));
+		btnDangNhap.setBackground(new Color(0, 128, 255));
+		btnDangNhap.setBounds(61, 446, 142, 41);
+		btnDangNhap.addActionListener(ac);
+		contentPane.add(btnDangNhap);
+		
+		JButton btnDangKi = new JButton("ĐĂNG KÝ");
+		btnDangKi.setForeground(new Color(255, 255, 255));
+		btnDangKi.setFont(new Font("Tahoma", Font.BOLD, 13));
+		btnDangKi.setBackground(new Color(0, 128, 255));
+		btnDangKi.setBounds(224, 445, 142, 41);
+		contentPane.add(btnDangKi);
+		btnDangKi.addActionListener(ac);
+		
+		
+	}
+}

@@ -1,0 +1,23 @@
+package aa;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+
+public class main {
+
+	public static void main(String[] args) {
+		try {
+			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+			String url ="jdbc:sqlserver://DESKTOP-FKBG7BD\\SQLEXPRESS:1433:databaseName=BAI1";
+			String userName ="sa";
+			String pass = "120605";
+			
+			Connection connection = DriverManager.getConnection(url, userName, pass);
+			System.out.println("Ngur di em");
+		} catch (Exception e) {
+			// TODO: handle exception
+		
+	}
+	}
+		
+}

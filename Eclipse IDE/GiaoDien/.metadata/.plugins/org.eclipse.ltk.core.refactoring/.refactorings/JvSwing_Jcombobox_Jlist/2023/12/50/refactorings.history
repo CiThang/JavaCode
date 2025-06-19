@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_JCombobox_Jlist/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_Jcombobox_Jlist&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_JCombobox_Jlist/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_Jcombobox_Jlist/src/Model&#x0D;&#x0A;     JvSwing_Jcombobox_Jlist/src/Test&#x0D;&#x0A;     JvSwing_Jcombobox_Jlist/src/Controller&#x0D;&#x0A;     JvSwing_Jcombobox_Jlist/src/View" description="Copy packages" destination="=JavaSwing_JCombobox_Jlist/src" element1="/src&lt;Model" element2="/src&lt;Test" element3="/src&lt;Controller" element4="/src&lt;View" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702559636944" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_Color_/src&apos;&#x0D;&#x0A;- Original project: &apos;JavaSwing_Color&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_Color_/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JavaSwing_Color/src/Model&#x0D;&#x0A;     JavaSwing_Color/src/Test&#x0D;&#x0A;     JavaSwing_Color/src/View&#x0D;&#x0A;     JavaSwing_Color/src/Controller" description="Copy packages" destination="=JavaSwing_Color_/src" element1="/src&lt;Model" element2="/src&lt;Test" element3="/src&lt;View" element4="/src&lt;Controller" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1711923801931" version="1.0"/>
+</session>

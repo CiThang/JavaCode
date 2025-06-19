@@ -1,0 +1,17 @@
+127.0.0.1 - - [14/Jun/2024:22:42:10 +0700] "GET / HTTP/1.1" 404 752
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:44:44 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15376
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:44:44 +0700] "GET /favicon.ico HTTP/1.1" 404 685
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:46:57 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15773
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:03 +0700] "GET /RestaurantDemoWeb/Register HTTP/1.1" 200 2329
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:16 +0700] "POST /RestaurantDemoWeb/Register HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:16 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15815
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:23 +0700] "POST /RestaurantDemoWeb/LogoutServlet HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:23 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15773
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:24 +0700] "GET /RestaurantDemoWeb/Register HTTP/1.1" 200 2329
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:27 +0700] "GET /RestaurantDemoWeb/Login HTTP/1.1" 200 2256
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:29 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15773
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:30 +0700] "GET /RestaurantDemoWeb/Login HTTP/1.1" 200 2256
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:35 +0700] "POST /RestaurantDemoWeb/Login HTTP/1.1" 302 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:35 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15815
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:52 +0700] "POST /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 -
+0:0:0:0:0:0:0:1 - - [14/Jun/2024:22:47:53 +0700] "GET /RestaurantDemoWeb/RestaurantOrder HTTP/1.1" 200 15815

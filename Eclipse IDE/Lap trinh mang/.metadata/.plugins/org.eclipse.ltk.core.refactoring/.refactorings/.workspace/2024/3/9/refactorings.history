@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Bai_tap_Java&apos; to &apos;Session2_MultiThreading&apos;" description="Rename resource &apos;Bai_tap_Java&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Bai_tap_Java" name="Session2_MultiThreading" stamp="1709340498724" updateReferences="true"/>
+</session>

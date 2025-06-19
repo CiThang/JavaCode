@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;Hb_05_Show_Where&apos;&#x0D;&#x0A;- Original project: &apos;Hb_05_Show_Where&apos;&#x0D;&#x0A;- Original element: &apos;Hb_05_Show_Where/src/main/java/HibernateUtil&apos;" description="Delete element" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;HibernateUtil" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1716691883888" subPackages="false" version="1.0"/>
+</session>

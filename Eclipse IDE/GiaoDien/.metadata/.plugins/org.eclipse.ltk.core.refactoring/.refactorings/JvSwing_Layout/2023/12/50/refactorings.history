@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;JavaSwing_Layout/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_Layout&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_Layout/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_Layout/src/BorderLayout&#x0D;&#x0A;     JvSwing_Layout/src/FlowLayout&#x0D;&#x0A;     JvSwing_Layout/src/GridLayout" description="Copy packages" destination="=JavaSwing_Layout/src" element1="/src&lt;BorderLayout" element2="/src&lt;FlowLayout" element3="/src&lt;GridLayout" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702560351245" version="1.0"/>
+</session>

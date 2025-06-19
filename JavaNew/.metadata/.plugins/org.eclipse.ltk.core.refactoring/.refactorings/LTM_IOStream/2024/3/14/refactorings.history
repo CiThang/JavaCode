@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 2 packages to &apos;LTM_IOStream_/src&apos;&#x0D;&#x0A;- Original project: &apos;LTM_IOStream&apos;&#x0D;&#x0A;- Destination element: &apos;LTM_IOStream_/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     LTM_IOStream/src/CayThuMuc&#x0D;&#x0A;     LTM_IOStream/src/Create_File" description="Copy packages" destination="=LTM_IOStream_/src" element1="/src&lt;CayThuMuc" element2="/src&lt;Create_File" flags="589830" fragments="2" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1711925003618" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Baimodau&apos; to &apos;JavaSwing/src&apos;&#x0D;&#x0A;- Original project: &apos;Jv_Swing&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing/src&apos;&#x0D;&#x0A;- Original element: &apos;Jv_Swing/src/Baimodau&apos;" description="Copy package" destination="=JavaSwing/src" element1="/src&lt;Baimodau" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702559386472" version="1.0"/>
+</session>

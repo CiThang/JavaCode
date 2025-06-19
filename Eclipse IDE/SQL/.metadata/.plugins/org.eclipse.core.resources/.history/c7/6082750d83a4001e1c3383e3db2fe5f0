@@ -1,0 +1,73 @@
+package DAO;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
+
+import javax.swing.JOptionPane;
+
+import Database.JDBCUtil;
+
+import View.StudentSignView;
+import View.StudentSystemView;
+
+public class StudentSignDao {
+
+	
+	
+	
+
+	public static StudentSignDao getInstance() {
+		return new StudentSignDao();
+	}
+	
+	public void Dangnhap(StudentSignView sta) {
+		StudentSignView SSV = new StudentSignView();
+		try {		
+			Connection con = JDBCUtil.getConnection();
+			// Buoc 3: Thuc thi cau lenh SQL
+			String sql = "SELECT * FROM StudentAccount WHERE MaHocSinh=? AND MatKhau=?";
+			try {
+			    // Sử dụng prepareStatement thay vì prepareCall
+			    PreparedStatement ps = con.prepareStatement(sql);
+			    
+			    // Thiết lập giá trị cho tham số
+			    ps.setString(1, sta.textFieldMaHS.getText());
+			    ps.setString(2, sta.passwordField.getText());
+
+			    // Thực hiện truy vấn và nhận kết quả
+			    ResultSet rs = ps.executeQuery();
+
+			    if (sta.textFieldMaHS.getText().equals("") || sta.passwordField.getText().equals("")) {
+			        JOptionPane.showMessageDialog(SSV, "Bạn chưa nhập thông tin");
+			    } else if (rs.next()) {
+			        // Nếu có bản ghi trong kết quả, tức là đăng nhập thành công
+			    	SSV.setVisible(false);
+			        SSV.dispose();
+			        StudentSystemView ss = new StudentSystemView();
+			        ss.setVisible(true);
+			        ss.setLocationRelativeTo(null);
+			        
+		
+			        JOptionPane.showMessageDialog(SSV, "Đăng nhập thành công");
+			    } else {
+			        JOptionPane.showMessageDialog(SSV, "Đăng nhập thất bại");
+			    }
+			} catch (SQLException e2) {
+			    // Xử lý ngoại lệ SQL
+			    e2.printStackTrace();
+			    JOptionPane.showMessageDialog(SSV, "Lỗi khi thực hiện truy vấn");
+			}
+
+					
+			// Buoc 5: Dong CSDL
+			JDBCUtil.closeConnection(con)	;		
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+}

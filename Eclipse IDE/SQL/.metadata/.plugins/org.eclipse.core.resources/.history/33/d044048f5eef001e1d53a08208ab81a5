@@ -1,0 +1,52 @@
+package Yelp_DAO;
+
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.PreparedStatement;
+
+import Database.JDBCUtil;
+import Yelp_Model.YelpUserAccount;
+import Yelp_View.YelpMainView;
+import Yelp_View.YelpRegisterView;
+
+public class YelpRegisterDAO {
+	
+	public static YelpRegisterDAO getInstance() {
+		return new YelpRegisterDAO();
+	}
+	
+	public YelpMainView mainview = new YelpMainView();
+	
+	
+	public void DangKi(YelpUserAccount user) {
+		int ketqua=0;
+		java.sql.Date sqlDate = new java.sql.Date(user.getNgaySinhNguoiDung().getTime());
+		
+		try {
+			Connection con = JDBCUtil.getConnection();
+			
+			String sql = "INSERT INTO UserAccount (Ho, Ten, TaiKhoan, Email, MatKhau, NgaySinh, AnhDaiDien) VALUES(?,?,?,?,?,?,?) ";
+			
+			PreparedStatement pst = con.prepareStatement(sql);
+			pst.setString(1, user.getHoNguoiDung());
+			pst.setString(2, user.getTenNguoiDung());
+			pst.setString(3, user.getTaiKhoanNguoiDung());
+			pst.setString(4, user.getEmailNguoiDung());
+			pst.setString(5, user.getMatKhauNguoiDung());
+			pst.setDate(6, sqlDate );
+			pst.setString(7, user.getAnhDaiDien());
+			
+			ketqua = pst.executeUpdate();
+			
+			JDBCUtil.closeConnection(con);
+			
+			
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		
+	}
+
+}

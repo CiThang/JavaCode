@@ -1,0 +1,33 @@
+package Yelp_Controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import Yelp_View.YelpRegisterView;
+import Yelp_View.YelpSignInView;
+
+public class YelpSignInController implements ActionListener {
+
+	YelpRegisterView register;
+	
+	private YelpSignInView sign;
+	
+	public YelpSignInController(YelpSignInView sign) {
+		this.sign = sign;
+	}
+
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		String luachon = e.getActionCommand();
+		if(luachon=="ĐĂNG NHẬP") {
+			
+		} else if(luachon=="ĐĂNG KÝ") {
+			sign.setVisible(false);
+			register.setVisible(true);
+			
+		}
+		
+	}
+
+}

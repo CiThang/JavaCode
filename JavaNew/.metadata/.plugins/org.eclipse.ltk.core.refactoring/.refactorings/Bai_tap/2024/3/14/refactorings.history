@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 3 packages to &apos;BaiTap/src&apos;&#x0D;&#x0A;- Original project: &apos;Bai_tap&apos;&#x0D;&#x0A;- Destination element: &apos;BaiTap/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     Bai_tap/src/Bai1&#x0D;&#x0A;     Bai_tap/src/Bai2&#x0D;&#x0A;     Bai_tap/src/Bai3" description="Copy packages" destination="=BaiTap/src" element1="/src&lt;Bai1" element2="/src&lt;Bai2" element3="/src&lt;Bai3" flags="589830" fragments="3" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1711925641957" version="1.0"/>
+</session>

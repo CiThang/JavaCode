@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+		<section name="NewWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="8"/>
+			<item key="DIALOG_Y_ORIGIN" value="8"/>
+			<item key="DIALOG_WIDTH" value="525"/>
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\FileCode\Java\JavaNew\Hb_02_ShowData"/>
+			<item value="D:\FileCode\Java\JavaNew\Hb_04_Update"/>
+			<item value="D:\FileCode\Java\JavaNew\Hb_03_Delete"/>
+			<item value="D:\FileCode\Java\part 23"/>
+			<item value="D:\FileCode\Java\JavaNew\Lap10"/>
+			<item value="D:\FileCode\Java\JavaNew\Hb_01"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot\Part_0"/>
+			<item value="D:\FileCode\Java\RestaurantManagement"/>
+			<item value="D:\FileCode\manage-conffee-hibernate-master\manage-conffee-hibernate-master"/>
+			<item value="D:\FileCode\manage-conffee-hibernate-master"/>
+			<item value="D:\FileCode\Java\JavaNew\Restaurant"/>
+			<item value="D:\FileCode\Java\JavaNew\WebRestaurant"/>
+			<item value="D:\FileCode\LearnSpringWeb"/>
+			<item value="D:\FileCode\CKWeb"/>
+			<item value="D:\FileCode\Java\part 23\server"/>
+			<item value="D:\FileCode\Java\part 23\chart-application"/>
+			<item value="D:\FileCode\part 23\server"/>
+			<item value="D:\FileCode\part 23\chart-application"/>
+			<item value="D:\FileCode\part 23"/>
+			<item value="D:\FileCode\spring-javafx-examples-master"/>
+			<item value="D:\FileCode\SpringBootFX-master\SpringBootFX-master"/>
+			<item value="D:\FileCode\SpringBootFX-master"/>
+			<item value="D:\FileCode\javafx-springboot-application-main"/>
+			<item value="D:\FileCode\fxEAP-main"/>
+			<item value="D:\FileCode\CafeShopManagementSystem-main"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot\SpringBoot_FX"/>
+			<item value="D:\FileCode\JavaFX-SpringBoot-Samples-main"/>
+			<item value="D:\FileCode\springboot-javafx-app-demo-master"/>
+			<item value="D:\FileCode\Java\SpringBoot\SpringBoot_01_Database"/>
+			<item value="D:\FileCode\Java\SpringBoot_00"/>
+			<item value="D:\FileCode\Java\LearnSpringPro"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot_03"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot_00"/>
+			<item value="D:\FileCode\Java\CafeTest"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot_02"/>
+			<item value="D:\FileCode\Java\Test"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot_01"/>
+			<item value="D:\FileCode\Java\LearnSpringBoot"/>
+			<item value="D:\FileCode\demo (1)"/>
+			<item value="D:\FileCode\demo"/>
+			<item value="D:\Fruits-Market-master"/>
+			<item value="C:\Users\dodot\Downloads\PersonLoan"/>
+			<item value="C:\Users\dodot\Downloads\BaiTap13_Client"/>
+			<item value="C:\Users\dodot\Downloads\BaiTap13_Server\BaiTap13_Server"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JScrollPane"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Mouse"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\JDBC_PreparedStatement"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\JDBC_Data_Access_Object"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\JDBC_Connect"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\JDBC_CacbuoctuongtacCSDL"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\Duan_Yelp_demo"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\DoTuVungTA"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Ngoaile\Thuchanh"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Ngoaile\Bai_tap"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\Session4_IOStream"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\Session3_MultiThreading_tt"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\Session2_MultiThreading"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\StreamDemo"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\LTM_TaoUngDungNslookup"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\LTM_Stream"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\LTM_MultiThreading"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\Lap trinh mang\LTM_IOStream"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\BaiTH4"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\BaiTH3"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\BaiTH2"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\BaiTH1"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_ToolBar"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_ThongBao"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_PhimTat"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_MVC"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Mouse"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Menu"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Layout"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JTextField"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JTextArea"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JTable"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JScrollPane"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JRadioButton_JCheckbox"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JPopupMenu"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JPanel"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JPaneDraw"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_JCombobox_Jlist"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_File"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Color"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Hinhanh_icon"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Font"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing_Close"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\GiaoDien\JavaSwing"/>
+			<item value="E:\FileCode\Java\Eclipse IDE\SQL\SchoolManagementSystem"/>
+			<item value="E:\FileCode\Java\JavaNew\SchoolManagementSystem"/>
+		</list>
+		<section name="SmartImportWizard.dialogBounds">
+			<item key="DIALOG_X_ORIGIN" value="8"/>
+			<item key="DIALOG_Y_ORIGIN" value="8"/>
+			<item key="DIALOG_WIDTH" value="885"/>
+			<item key="DIALOG_HEIGHT" value="629"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;History&gt;&#x0D;&#x0A;&lt;historyRootNode/&gt;&#x0D;&#x0A;&lt;/History&gt;"/>
+		<item key="ShowDerived" value="false"/>
+		<item key="FilterByLocation" value="false"/>
+		<item key="WorkingSet" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0D;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="391"/>
+			<item key="DIALOG_Y_ORIGIN" value="44"/>
+			<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		</section>
+	</section>
+</section>

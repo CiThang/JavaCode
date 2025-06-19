@@ -1,0 +1,43 @@
+class MyThread extends Thread {
+    public void run() {
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Thread " + Thread.currentThread().getId() + " - Count: " + i);
+            try {
+                Thread.sleep(500);
+            } catch (InterruptedException e) {
+                System.out.println(e);
+            }
+        }
+    }
+}
+
+public class PThuc_suspend_sesume {
+    public static void main(String[] args) {
+        MyThread t1 = new MyThread();
+        MyThread t2 = new MyThread();
+
+        t1.start();
+        t2.start();
+
+        // Suspend t1 temporarily
+        t1.suspend();
+        System.out.println("Thread " + t1.getId() + " suspended.");
+
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+
+        // Resume t1
+        t1.resume();
+        System.out.println("Thread " + t1.getId() + " resumed.");
+
+        try {
+            t1.join();
+            t2.join();
+        } catch (InterruptedException e) {
+            System.out.println(e);
+        }
+    }
+}

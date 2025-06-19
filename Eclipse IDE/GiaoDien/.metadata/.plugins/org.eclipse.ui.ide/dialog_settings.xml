@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="SmartImportWizard">
+		<item key="SmartImportRootWizardPage.STORE_HIDE_ALREADY_OPEN" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_CLOSE_IMPORTED" value="false"/>
+		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="true"/>
+		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
+		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Vidu1"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Baithuchanh4"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Baithuchanh3"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Baithuchanh2"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\baithuchanh1"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Bai1"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_ToolBar"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_ThongBao"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Phimtat"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_MVC"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Mouse"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Menu"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Layout"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JTextField"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JTextArea"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JTable"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JScrollPane"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JRadioButton_JCheckbox"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JPopupMenu"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JPanel"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_JPaneDraw"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Jcombobox_Jlist"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Hinhanh_icon"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Font"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_File"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Color"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\JvSwing_Close"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Jv_Swing"/>
+			<item value="D:\FileCode\Java\Eclipse IDE\JvSwing\Doan_1"/>
+		</list>
+	</section>
+</section>

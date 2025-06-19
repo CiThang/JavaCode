@@ -1,0 +1,64 @@
+package application;
+	
+import javafx.application.Application;
+import javafx.event.ActionEvent;
+import javafx.event.Event;
+import javafx.event.EventHandler;
+import javafx.stage.Stage;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.layout.BorderPane;
+
+
+public class Main extends Application {
+	private Stage stage;
+	private Scene scene;
+	private BorderPane root;
+	private Button button;
+	private Label label;
+	private int i=1;
+	
+	@Override
+	public void start(Stage primaryStage) {
+
+		this.stage = primaryStage;
+		stage.setTitle("Event Explorer");
+		this.root = new BorderPane();
+		
+		root.addEventFilter(ActionEvent.ACTION, new EventHandler<ActionEvent>() {
+
+			@Override
+			public void handle(ActionEvent event) {
+				// TODO Auto-generated method stub
+				System.out.println("Event Filter");
+				
+			}
+		});
+		
+		root.addEventHandler(ActionEvent.ACTION, new Eventent);
+		
+		
+		this.scene = new Scene(root,700,500);
+		this.button = new Button("Click me!!!");
+		this.button.setOnAction(new EventHandler<ActionEvent>() {
+			
+			@Override
+			public void handle(ActionEvent arg0) {
+				// TODO Auto-generated method stub
+				i++;
+				label.setText("Button Click!!! "+i);
+				
+			}
+		});
+		this.label = new Label();
+		this.root.setCenter(button);
+		this.root.setBottom(label);
+		this.stage.setScene(scene);
+		this.stage.show();
+	}
+	
+	public static void main(String[] args) {
+		launch(args);
+	}
+}

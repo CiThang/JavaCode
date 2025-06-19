@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;Main&apos; to &apos;JavaSwing_JPaneDraw/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_JPaneDraw&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_JPaneDraw/src&apos;&#x0D;&#x0A;- Original element: &apos;JvSwing_JPaneDraw/src/Main&apos;" description="Copy package" destination="=JavaSwing_JPaneDraw/src" element1="/src&lt;Main" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702559662757" version="1.0"/>
+</session>

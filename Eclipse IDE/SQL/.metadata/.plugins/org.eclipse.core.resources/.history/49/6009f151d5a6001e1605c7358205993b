@@ -1,0 +1,364 @@
+package View;
+
+import java.awt.EventQueue;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+
+import Controller.StudentSystemListener;
+import Model.Student;
+import Model.StudentAccount;
+import Model.StudentManagement;
+import Model.Tinh;
+
+import javax.swing.JMenuBar;
+import javax.swing.JMenu;
+import javax.swing.JMenuItem;
+import javax.swing.JLabel;
+import java.awt.Color;
+import javax.swing.ImageIcon;
+import javax.swing.JTextField;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Toolkit;
+import java.awt.event.ActionListener;
+import java.awt.event.MouseListener;
+import java.io.File;
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.Date;
+
+import javax.swing.SwingConstants;
+import javax.swing.JComboBox;
+import javax.swing.JFileChooser;
+import javax.swing.JRadioButton;
+import java.awt.Component;
+import java.awt.Container;
+
+import javax.swing.Box;
+import javax.swing.ButtonGroup;
+import javax.swing.JButton;
+import javax.swing.JTabbedPane;
+import java.awt.event.ActionEvent;
+
+public class StudentSystemView extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	public StudentManagement studentManagement = new StudentManagement();
+
+	private JPanel contentPane;
+	public JTextField textFieldhoten;
+	public JTextField textFieldlop;
+	public JTextField textFieldNgaysinh;
+	public JTextField textFieldDiachi;
+	public ButtonGroup btnGioitinh;
+	public JLabel lblMaThiSinh;
+	public JComboBox comboBoxQueQuan;
+	public JRadioButton rdbtnNam;
+	public JRadioButton rdbtnNu;
+	public JLabel lblDiemToan;
+	public JLabel lbldiemvan;
+	public JLabel lblDiemAnh;
+	public File duongdananh;
+	public JLabel lblanh;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			private Student student = new Student();
+
+			public void run() {
+				try {
+					StudentSystemView frame = new StudentSystemView();
+					frame.setVisible(true);
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+				this.student = new Student();
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public StudentSystemView() {
+		setTitle("Hệ thống cổng thông tin");
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 927, 603);
+		ActionListener ac = new StudentSystemListener(this);
+		StudentSignView ssv = new StudentSignView();
+		URL sUrl = StudentSystemView.class.getResource("student.png");
+		Image image = Toolkit.getDefaultToolkit().createImage(sUrl);
+		setIconImage(image);
+
+		JMenuBar menuBar = new JMenuBar();
+		setJMenuBar(menuBar);
+
+		JMenu mnNewMenu = new JMenu("Tài khoản");
+		menuBar.add(mnNewMenu);
+
+		JMenuItem mntmDoiMatKhau = new JMenuItem("Đổi mật khẩu");
+		mntmDoiMatKhau.addActionListener(ac);
+		mntmDoiMatKhau.setIcon(new ImageIcon(
+				Toolkit.getDefaultToolkit().createImage(StudentSystemView.class.getResource("pass.png"))));
+		mnNewMenu.add(mntmDoiMatKhau);
+
+		JMenuItem mntmThoat = new JMenuItem("Đăng xuất");
+		mntmThoat.setIcon(new ImageIcon(
+				Toolkit.getDefaultToolkit().createImage(StudentSystemView.class.getResource("exit.png"))));
+		mnNewMenu.add(mntmThoat);
+		mntmThoat.addActionListener(ac);
+		JMenu mnNewMenu_1 = new JMenu("Hỗ trợ");
+		menuBar.add(mnNewMenu_1);
+
+		JMenuItem mntmYKien = new JMenuItem("Ý Kiến");
+		mntmYKien.addActionListener(ac);
+		mntmYKien.setIcon(new ImageIcon(
+				Toolkit.getDefaultToolkit().createImage(StudentSystemView.class.getResource("Comment.png"))));
+		mnNewMenu_1.add(mntmYKien);
+		contentPane = new JPanel();
+		contentPane.setBackground(new Color(255, 255, 255));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+		setContentPane(contentPane);
+		contentPane.setLayout(null);
+
+		JPanel panel = new JPanel();
+		panel.setBackground(new Color(0, 128, 255));
+		panel.setBounds(0, 0, 186, 542);
+		contentPane.add(panel);
+		panel.setLayout(null);
+
+		JLabel lblNewLabel_1 = new JLabel("");
+		lblNewLabel_1.setIcon(new ImageIcon("D:\\Documents\\ĐỒ ÁN JAVA\\Webalys-Kameleon.pics-Student-3.128.png"));
+		lblNewLabel_1.setBounds(34, 32, 140, 144);
+		panel.add(lblNewLabel_1);
+
+		JButton btnLuu = new JButton("Lưu");
+		btnLuu.addActionListener(ac);
+		btnLuu.setBounds(25, 428, 129, 23);
+		panel.add(btnLuu);
+
+		JButton btnXoa = new JButton("Xóa");
+		btnXoa.addActionListener(ac);
+		btnXoa.setBounds(25, 472, 129, 23);
+		panel.add(btnXoa);
+
+		lblanh = new JLabel("");
+		lblanh.setIcon(new ImageIcon("D:\\Pictures\\3f368a7615ee399a42f31256b0127b78.jpg"));
+		lblanh.setBounds(238, 48, 146, 207);
+		contentPane.add(lblanh);
+
+		JLabel lblNewLabelhoten = new JLabel("Họ và tên");
+		lblNewLabelhoten.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelhoten.setBounds(468, 48, 96, 32);
+		contentPane.add(lblNewLabelhoten);
+
+		JLabel lblNewLabelLop = new JLabel("Lớp");
+		lblNewLabelLop.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelLop.setBounds(468, 109, 49, 32);
+		contentPane.add(lblNewLabelLop);
+
+		JLabel lblNewLabelgioiTinh = new JLabel("Giới tính");
+		lblNewLabelgioiTinh.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelgioiTinh.setBounds(470, 176, 83, 32);
+		contentPane.add(lblNewLabelgioiTinh);
+
+		JLabel lblNewLabelNgaySinh = new JLabel("Ngày sinh");
+		lblNewLabelNgaySinh.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelNgaySinh.setBounds(468, 238, 96, 32);
+		contentPane.add(lblNewLabelNgaySinh);
+
+		JLabel lblNewLabelDiaChi = new JLabel("Địa chỉ");
+		lblNewLabelDiaChi.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelDiaChi.setBounds(468, 305, 96, 32);
+		contentPane.add(lblNewLabelDiaChi);
+
+		JLabel lblNewLabelQueQuan = new JLabel("Quê quán");
+		lblNewLabelQueQuan.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelQueQuan.setBounds(468, 368, 96, 32);
+		contentPane.add(lblNewLabelQueQuan);
+
+		JLabel lblNewLabelDiem = new JLabel("Điểm");
+		lblNewLabelDiem.setFont(new Font("Arial", Font.BOLD, 20));
+		lblNewLabelDiem.setBounds(468, 432, 96, 32);
+		contentPane.add(lblNewLabelDiem);
+
+		JLabel lblNewLabelToan = new JLabel("Toán");
+		lblNewLabelToan.setFont(new Font("Arial", Font.BOLD, 17));
+		lblNewLabelToan.setBounds(612, 433, 59, 32);
+		contentPane.add(lblNewLabelToan);
+
+		JLabel lblNewLabelVan = new JLabel("Ngữ văn");
+		lblNewLabelVan.setFont(new Font("Arial", Font.BOLD, 17));
+		lblNewLabelVan.setBounds(705, 433, 79, 32);
+		contentPane.add(lblNewLabelVan);
+
+		JLabel lblNewLabelAnh = new JLabel("Ngoại ngữ");
+		lblNewLabelAnh.setFont(new Font("Arial", Font.BOLD, 17));
+		lblNewLabelAnh.setBounds(804, 433, 83, 32);
+		contentPane.add(lblNewLabelAnh);
+
+		textFieldhoten = new JTextField();
+		textFieldhoten.setFont(new Font("Arial", Font.PLAIN, 15));
+		textFieldhoten.setBounds(597, 48, 248, 32);
+		contentPane.add(textFieldhoten);
+		textFieldhoten.setColumns(10);
+
+		textFieldlop = new JTextField();
+		textFieldlop.setFont(new Font("Arial", Font.PLAIN, 15));
+		textFieldlop.setColumns(10);
+		textFieldlop.setBounds(597, 109, 248, 32);
+		contentPane.add(textFieldlop);
+
+		textFieldNgaysinh = new JTextField();
+		textFieldNgaysinh.setFont(new Font("Arial", Font.PLAIN, 15));
+		textFieldNgaysinh.setColumns(10);
+		textFieldNgaysinh.setBounds(597, 238, 248, 32);
+		contentPane.add(textFieldNgaysinh);
+
+		textFieldDiachi = new JTextField();
+		textFieldDiachi.setFont(new Font("Arial", Font.PLAIN, 15));
+		textFieldDiachi.setColumns(10);
+		textFieldDiachi.setBounds(597, 305, 248, 32);
+		contentPane.add(textFieldDiachi);
+
+		comboBoxQueQuan = new JComboBox();
+		ArrayList<Tinh> listTinh = Tinh.getDSTinh();
+		for (Tinh tinh : listTinh) {
+			comboBoxQueQuan.addItem(tinh.getTenTinh()); // JComboBox.addItem - Them cac list thong tin vao
+														// JComboBox
+		}
+		comboBoxQueQuan.setBounds(597, 376, 248, 32);
+		contentPane.add(comboBoxQueQuan);
+
+		lblMaThiSinh = new JLabel();
+		lblMaThiSinh.setFont(new Font("Arial", Font.BOLD, 12));
+		lblMaThiSinh.setBounds(329, 305, 68, 23);
+		contentPane.add(lblMaThiSinh);
+		System.out.println();
+
+		lblDiemToan = new JLabel("");
+		lblDiemToan.setFont(new Font("Arial", Font.PLAIN, 13));
+		lblDiemToan.setBounds(622, 478, 32, 23);
+		contentPane.add(lblDiemToan);
+
+		lbldiemvan = new JLabel("");
+		lbldiemvan.setFont(new Font("Arial", Font.PLAIN, 13));
+		lbldiemvan.setBounds(725, 476, 32, 23);
+		contentPane.add(lbldiemvan);
+
+		lblDiemAnh = new JLabel("");
+		lblDiemAnh.setFont(new Font("Arial", Font.PLAIN, 13));
+		lblDiemAnh.setBounds(828, 476, 32, 23);
+		contentPane.add(lblDiemAnh);
+
+		rdbtnNam = new JRadioButton("Nam");
+		rdbtnNam.setBackground(new Color(255, 255, 255));
+		rdbtnNam.setBounds(597, 184, 59, 23);
+		contentPane.add(rdbtnNam);
+
+		rdbtnNu = new JRadioButton("Nu");
+		rdbtnNu.setBackground(new Color(255, 255, 255));
+		rdbtnNu.setBounds(725, 184, 59, 23);
+		contentPane.add(rdbtnNu);
+
+		btnGioitinh = new ButtonGroup();
+		btnGioitinh.add(rdbtnNam);
+		btnGioitinh.add(rdbtnNu);
+
+		JLabel lblMHcSinh = new JLabel();
+		lblMHcSinh.setText("Mã học sinh: ");
+		lblMHcSinh.setFont(new Font("Arial", Font.BOLD, 12));
+		lblMHcSinh.setBounds(244, 305, 89, 23);
+		contentPane.add(lblMHcSinh);
+
+		JButton btnChonAnh = new JButton("Chọn ảnh");
+		btnChonAnh.setBounds(271, 266, 89, 23);
+		btnChonAnh.addActionListener(ac);
+		contentPane.add(btnChonAnh);
+	}
+
+	public Student thucHienLuu() {
+		int maHocSinh = Integer.valueOf(this.lblMaThiSinh.getText());
+		String hoten = this.textFieldhoten.getText();
+		String lop = this.textFieldlop.getText();
+		boolean gioiTinh = true;
+		if (this.rdbtnNam.isSelected()) {
+			gioiTinh = true;
+		} else if (this.rdbtnNu.isSelected()) {
+			gioiTinh = false;
+		}
+		Date ngaySinh = new Date(this.textFieldNgaysinh.getText());
+		String diachi = this.textFieldDiachi.getText();
+		int quequan = this.comboBoxQueQuan.getSelectedIndex();
+		Tinh tinh = Tinh.getTinhByID(quequan);
+
+		String anh = String.valueOf(duongdananh);
+
+		Student st = new Student(maHocSinh, hoten, lop, gioiTinh, ngaySinh, diachi, tinh, anh);
+		studentManagement.insert(st);
+		return st;
+	}
+
+	public void SetText(Student st) {
+
+		this.textFieldhoten.setText(st.getHoTen());
+		this.textFieldlop.setText(st.getLop());
+		String s_ngaySinh = st.getNgaySinh().getDate() + "/" + (st.getNgaySinh().getMonth() + 1) + "/"
+				+ (st.getNgaySinh().getYear() + 1900);
+		this.textFieldNgaysinh.setText(s_ngaySinh);
+
+		if (st.isGioiTinh()) {
+			this.rdbtnNam.setSelected(true);
+		} else {
+			this.rdbtnNu.setSelected(true);
+		}
+		this.textFieldDiachi.setText(st.getDiaChi());
+		this.lblDiemToan.setText(st.getDiemToan() + "");
+		this.lbldiemvan.setText(st.getDiemVan() + "");
+		this.lblDiemAnh.setText(st.getDiemAnh() + "");
+		this.comboBoxQueQuan.setSelectedItem(st.getQueQuan().getTenTinh());
+
+		this.lblanh.setIcon(ResizeImage(st.getAnh()));
+	}
+
+	public void xoaForm() {
+		this.textFieldhoten.setText("");
+		this.textFieldlop.setText("");
+
+		this.textFieldNgaysinh.setText("");
+		this.rdbtnNam.setSelected(false);
+		this.rdbtnNu.setSelected(false);
+		this.textFieldDiachi.setText("");
+		this.comboBoxQueQuan.setSelectedItem("");
+
+	}
+
+	public ImageIcon ResizeImage(String ImagePath) {
+		ImageIcon MyImage = new ImageIcon(ImagePath);
+		Image img = MyImage.getImage();
+		Image newimg = img.getScaledInstance(lblanh.getWidth(), lblanh.getHeight(), Image.SCALE_SMOOTH);
+		ImageIcon image = new ImageIcon(newimg);
+		return image;
+
+	}
+
+	public void setAnh() {
+		try {
+			JFileChooser f = new JFileChooser("D:\\Documents\\ĐỒ ÁN JAVA\\Anh");
+			f.setDialogTitle("Mở file");
+			f.showOpenDialog(null);
+			File ftenanh = f.getSelectedFile();
+			duongdananh = ftenanh.getAbsoluteFile();
+			this.lblanh.setIcon(ResizeImage(String.valueOf(duongdananh)));
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

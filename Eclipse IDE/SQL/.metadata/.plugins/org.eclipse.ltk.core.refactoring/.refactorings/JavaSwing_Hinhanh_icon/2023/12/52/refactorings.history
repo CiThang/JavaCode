@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Save.png&apos; to &apos;SchoolManagementSystem/src/View&apos;&#x0D;&#x0A;- Original project: &apos;JavaSwing_Hinhanh_icon&apos;&#x0D;&#x0A;- Destination element: &apos;SchoolManagementSystem/src/View&apos;&#x0D;&#x0A;- Original element: &apos;Save.png&apos;" description="Copy file" destination="=SchoolManagementSystem/src&lt;View" element1="src/Icon/Save.png" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1703847628244" units="0" version="1.0"/>
+</session>

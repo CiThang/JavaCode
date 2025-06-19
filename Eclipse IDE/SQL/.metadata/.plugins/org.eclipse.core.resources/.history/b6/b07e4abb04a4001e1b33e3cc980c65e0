@@ -1,0 +1,78 @@
+package View;
+
+import java.awt.EventQueue;
+
+import java.awt.Image;
+
+import javax.swing.ImageIcon;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import java.awt.Color;
+import java.awt.Label;
+import java.awt.event.ComponentAdapter;
+import java.awt.event.ComponentEvent;
+import java.net.URL;
+import java.awt.Panel;
+import java.awt.Toolkit;
+import java.awt.Font;
+import java.awt.Button;
+
+public class MainSign extends JFrame {
+
+	private static final long serialVersionUID = 1L;
+	private JPanel contentPane;
+
+	/**
+	 * Launch the application.
+	 */
+	public static void main(String[] args) {
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				try {
+					MainSign frame = new MainSign();
+					frame.setVisible(true);
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+	/**
+	 * Create the frame.
+	 */
+	public MainSign() {
+		getContentPane().setBackground(new Color(255, 255, 255));
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 650, 322);
+		contentPane.setBackground(new Color(255, 255, 255));
+		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+		URL urlIcon = MainSign.class.getResource("anhnenSignMain.png");
+		Image image = Toolkit.getDefaultToolkit().createImage(urlIcon);
+		
+		setContentPane(contentPane);
+		getContentPane().setLayout(null);
+		
+		Label label = new Label("CHỌN NGƯỜI DÙNG");
+		label.setFont(new Font("Arial", Font.BOLD, 17));
+		label.setBounds(218, 189, 180, 34);
+		getContentPane().add(label);
+		
+		Button button = new Button("HỌC SINH");
+		button.setFont(new Font("Arial", Font.BOLD, 14));
+		button.setBounds(118, 229, 115, 34);
+		getContentPane().add(button);
+		
+		Button button_1 = new Button("GIÁO VIÊN");
+		button_1.setFont(new Font("Arial", Font.BOLD, 14));
+		button_1.setBounds(378, 229, 115, 34);
+		getContentPane().add(button_1);
+		
+		Label labelBackGround = new Label("");
+		
+		labelBackGround.setBounds(0, 0, 634, 190);		
+		getContentPane().add(labelBackGround);
+		contentPane.setLayout(null);
+	}
+}

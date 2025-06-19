@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_JScrollPane/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_JScrollPane&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_JScrollPane/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_JScrollPane/src/Controller&#x0D;&#x0A;     JvSwing_JScrollPane/src/Text&#x0D;&#x0A;     JvSwing_JScrollPane/src/View&#x0D;&#x0A;     JvSwing_JScrollPane/src/Model" description="Copy packages" destination="=JavaSwing_JScrollPane/src" element1="/src&lt;Controller" element2="/src&lt;Text" element3="/src&lt;View" element4="/src&lt;Model" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702559749650" version="1.0"/>
+</session>

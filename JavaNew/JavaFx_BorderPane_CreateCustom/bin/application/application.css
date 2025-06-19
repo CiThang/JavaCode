@@ -1,0 +1,10 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+.root {
+    -fx-font-size: 14px;
+}
+
+#statusbar {
+    -fx-border-color: -fx-box-border;
+    -fx-border-width: 1.0;
+    -fx-border-style: solid; /* Corrected value */
+}

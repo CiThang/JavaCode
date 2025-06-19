@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_Font_/src&apos;&#x0D;&#x0A;- Original project: &apos;JavaSwing_Font&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_Font_/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JavaSwing_Font/src/Model&#x0D;&#x0A;     JavaSwing_Font/src/Test&#x0D;&#x0A;     JavaSwing_Font/src/Controller&#x0D;&#x0A;     JavaSwing_Font/src/View" description="Copy packages" destination="=JavaSwing_Font_/src" element1="/src&lt;Model" element2="/src&lt;Test" element3="/src&lt;Controller" element4="/src&lt;View" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1711923622662" version="1.0"/>
+</session>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_ToolBar/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_ToolBar&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_ToolBar/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_ToolBar/src/Model&#x0D;&#x0A;     JvSwing_ToolBar/src/Test&#x0D;&#x0A;     JvSwing_ToolBar/src/Controller&#x0D;&#x0A;     JvSwing_ToolBar/src/View" description="Copy packages" destination="=JavaSwing_ToolBar/src" element1="/src&lt;Model" element2="/src&lt;Test" element3="/src&lt;Controller" element4="/src&lt;View" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702560511184" version="1.0"/>
+</session>

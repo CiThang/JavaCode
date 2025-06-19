@@ -1,0 +1,80 @@
+package BaiTap;
+
+import javax.swing.*;
+import javax.swing.event.TreeExpansionEvent;
+import javax.swing.event.TreeSelectionEvent;
+import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.*;
+import java.awt.*;
+import java.awt.event.*;
+import java.io.*;
+
+public class Bai_1 extends JFrame {
+
+    private JTree fileTree;
+    private DefaultTreeModel treeModel;
+    private DefaultMutableTreeNode root;
+
+    public Bai_1() {
+        super("File Explorer");
+
+        // Set up the UI
+        root = new DefaultMutableTreeNode(new File("/"));
+        treeModel = new DefaultTreeModel(root);
+        fileTree = new JTree(treeModel);
+        fileTree.setRootVisible(false);
+        fileTree.setShowsRootHandles(true);
+
+        JScrollPane scrollPane = new JScrollPane(fileTree);
+        getContentPane().add(scrollPane, BorderLayout.CENTER);
+
+        // Add listener to expand directories
+        fileTree.addTreeSelectionListener((TreeSelectionListener) new TreeSelectionListener() {
+            public void treeExpanded(TreeExpansionEvent event) {
+                DefaultMutableTreeNode expandedNode = (DefaultMutableTreeNode) event.getPath().getLastPathComponent();
+                expandNode(expandedNode);
+            }
+
+            public void treeCollapsed(TreeExpansionEvent event) {
+                // Do nothing when collapsed
+            }
+
+			@Override
+			public void valueChanged(TreeSelectionEvent e) {
+				// TODO Auto-generated method stub
+				
+			}
+        });
+
+        // Set up the frame
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400, 300);
+        setLocationRelativeTo(null); // Center the window
+        setVisible(true);
+    }
+
+    private void expandNode(DefaultMutableTreeNode node) {
+        if (node.isLeaf() || node.getChildCount() != 0) {
+            return;
+        }
+
+        File directory = (File) node.getUserObject();
+        if (directory.isDirectory()) {
+            File[] files = directory.listFiles();
+            if (files != null) {
+                for (File file : files) {
+                    DefaultMutableTreeNode newNode = new DefaultMutableTreeNode(file);
+                    node.add(newNode);
+                    if (file.isDirectory()) {
+                        newNode.add(new DefaultMutableTreeNode(true));
+                    }
+                }
+                treeModel.reload(node);
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(() -> new Bai_1());
+    }
+}

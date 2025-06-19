@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_PhimTat/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_Phimtat&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_PhimTat/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_Phimtat/src/View&#x0D;&#x0A;     JvSwing_Phimtat/src/Model&#x0D;&#x0A;     JvSwing_Phimtat/src/Test&#x0D;&#x0A;     JvSwing_Phimtat/src/Controller" description="Copy packages" destination="=JavaSwing_PhimTat/src" element1="/src&lt;View" element2="/src&lt;Model" element3="/src&lt;Test" element4="/src&lt;Controller" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702560469425" version="1.0"/>
+</session>

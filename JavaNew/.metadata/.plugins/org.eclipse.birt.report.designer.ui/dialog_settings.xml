@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="Shell {Edit Text Item} [layout=GridLayout {numColumns=5 verticalSpacing=5}]/Shell {JavaNew - RestaurantManagement/Part_01/src/main/java/Restaurant/Part_01/reporting/new_report.rptdesign - Eclipse IDE} [layout=org.eclipse.e4.ui.workbench.renderers.swt.TrimmedPartLayout@2c70bce9]">
+		<item key="DIALOG_X_ORIGIN" value="254"/>
+		<item key="DIALOG_Y_ORIGIN" value="37"/>
+		<item key="DIALOG_WIDTH" value="874"/>
+		<item key="DIALOG_HEIGHT" value="510"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+	</section>
+</section>

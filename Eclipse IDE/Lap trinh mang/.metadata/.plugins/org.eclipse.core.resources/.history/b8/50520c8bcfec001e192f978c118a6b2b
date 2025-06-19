@@ -1,0 +1,52 @@
+package Phuong_Thuc;
+
+
+
+public class PThuc_join_2 {
+
+	public static void main(String[] args) {
+		
+		Thread th1 = new Thread(new YourThread(),"th1");
+		Thread th2 = new Thread(new YourThread(),"th2");
+		Thread th3 = new Thread(new YourThread(),"th3");
+		
+		th1.start();
+		try {
+			th1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		th2.start();
+		try {
+			th2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		th3.start();
+		try {
+			th3.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}
+
+class YourThread implements Runnable{
+	@Override
+	public void run() {
+		Thread t = Thread.currentThread();
+		System.out.println("Bắt đầu thread: " + t.getName());
+		try {
+			Thread.sleep(4000);
+		} catch (InterruptedException e) {
+			// TODO: handle exception
+			e.printStackTrace();
+		}
+		System.out.println("Kết thuc thread: "+t.getName());
+	}
+}

@@ -1,0 +1,52 @@
+import java.beans.IntrospectionException;
+
+class MyThread extends Thread{
+	@Override
+	public void run() {
+		for(int i = 1; i <= 5; i++) {
+			System.out.println("Thread "+ Thread.currentThread().getId() + " - Count: " + i);
+			try {
+				Thread.sleep(500);
+			} catch (InterruptedException e) {
+				System.out.println(e);
+			}
+		}
+	}
+}
+
+public class PThuc_suspend_sesume {
+	public static void main(String[] args) {
+		
+		MyThread t1 = new MyThread();
+		MyThread t2 = new MyThread();
+		
+		t1.start();
+		t2.start();
+		
+		t1.suspend();
+		System.out.println("Thread " + t1.getId() + " suspended.");
+		
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			System.out.println(e);
+		}
+		
+		t1.resume();
+		System.out.println("Thread " + t1.getId() + "resumed");
+		
+		try {
+			t1.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			t2.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

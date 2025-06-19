@@ -1,0 +1,6 @@
+PREF_VM_INSTALL_SYSTEM_PROPERTY.org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType.1711921864150.java.version=22
+eclipse.preferences.version=1
+org.eclipse.jdt.launching.PREF_CONNECT_TIMEOUT=20000
+org.eclipse.jdt.launching.PREF_DEFAULT_ENVIRONMENTS_XML=
+org.eclipse.jdt.launching.PREF_VM_XML=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<vmSettings defaultVM\="57,org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType13,1711921864150" defaultVMConnector\="">\r\n    <vmType id\="org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType">\r\n        <vm id\="1711921864150" name\="jdk-22" path\="C\:\\Program Files\\Java\\jdk-22" vmargs\="--module-path &quot;C\:\\Users\\Admin\\Downloads\\openjfx-22.0.1_windows-x64_bin-sdk\\javafx-sdk-22.0.1\\lib&quot; --add-modules javafx.controls,javafx.fxml"/>\r\n    </vmType>\r\n</vmSettings>\r\n
+org.eclipse.jdt.launching.only_include_exported_classpath_entries=false

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Tinh.java&apos; to &apos;SchoolManagementSystem/src/Model&apos;&#x0D;&#x0A;- Original project: &apos;Doan1&apos;&#x0D;&#x0A;- Destination element: &apos;SchoolManagementSystem/src/Model&apos;&#x0D;&#x0A;- Original element: &apos;Model.Tinh.java&apos;" description="Copy compilation unit" destination="=SchoolManagementSystem/src&lt;Model" element1="/src&lt;Model{Tinh.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1703666999433" units="1" version="1.0"/>
+</session>

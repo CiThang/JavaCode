@@ -1,0 +1,45 @@
+package Yelp_Controller;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import javax.swing.JOptionPane;
+
+import Yelp_DAO.YelpRegisterDAO;
+import Yelp_Model.YelpUserAccount;
+import Yelp_View.YelpRegisterView;
+import Yelp_View.YelpSignInView;
+
+public class YelpRegisterController implements ActionListener {
+
+	public YelpRegisterView register;
+	
+	public YelpRegisterController(YelpRegisterView register) {
+		this.register = register;
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		String luachon = e.getActionCommand();
+		
+		if(luachon=="HỦY") {
+			register.setVisible(false);
+			YelpSignInView view = new YelpSignInView();
+			view.setVisible(true);
+			view.setLocationRelativeTo(null);
+		} else if(luachon=="Chọn ảnh") {
+			register.setAnh();
+		} else if(luachon=="TẠO TÀI KHOẢN ") {
+			try {
+				YelpUserAccount userAccount = register.ThongtinUser();
+				YelpRegisterDAO.getInstance().DangKi(userAccount);
+				JOptionPane.showMessageDialog(register, "Đăng kí thành công");
+			} catch (Exception e2) {
+				// TODO: handle exception
+				JOptionPane.showMessageDialog(register, "Đăng kí thất bại");
+			}
+		}
+		
+	}
+
+}

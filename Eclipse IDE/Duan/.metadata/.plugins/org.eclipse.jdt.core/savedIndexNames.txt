@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+D:\FileCode\Java\Eclipse IDE\Duan\.metadata\.plugins\org.eclipse.jdt.core
+102407068.index
+1865797976.index
+2910664094.index

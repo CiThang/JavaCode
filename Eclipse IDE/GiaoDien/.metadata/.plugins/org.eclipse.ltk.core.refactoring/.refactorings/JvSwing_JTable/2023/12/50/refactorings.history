@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy 4 packages to &apos;JavaSwing_JTable/src&apos;&#x0D;&#x0A;- Original project: &apos;JvSwing_JTable&apos;&#x0D;&#x0A;- Destination element: &apos;JavaSwing_JTable/src&apos;&#x0D;&#x0A;- Original elements:&#x0D;&#x0A;     JvSwing_JTable/src/Test&#x0D;&#x0A;     JvSwing_JTable/src/Model&#x0D;&#x0A;     JvSwing_JTable/src/Controller&#x0D;&#x0A;     JvSwing_JTable/src/View" description="Copy packages" destination="=JavaSwing_JTable/src" element1="/src&lt;Test" element2="/src&lt;Model" element3="/src&lt;Controller" element4="/src&lt;View" flags="589830" fragments="4" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1702559774669" version="1.0"/>
+</session>
